@@ -62,12 +62,13 @@
 %                Font configuration
 %-------------------------------------------------------------------------------
 \newfontfamily\cvfont[
+  Path = fonts/,
   UprightFont = MapleMonoNL-NFMono-CN-Regular.ttf,
   BoldFont    = MapleMonoNL-NFMono-CN-Regular.ttf,
   ItalicFont  = MapleMonoNL-NFMono-CN-Regular.ttf,
   BoldItalicFont = MapleMonoNL-NFMono-CN-Regular.ttf,
   FakeBold    = 2.5,
-]{MapleMono}
+]{}
 
 %-------------------------------------------------------------------------------
 %                Text styles
