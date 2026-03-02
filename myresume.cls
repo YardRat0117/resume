@@ -141,12 +141,11 @@
 % Social items helper
 \newif\if@res@social@first
 \newcommand{\res@socialitem}[3][]{%
-  \ifblank{#2}{}{%
-    \if@res@social@first\@res@social@firstfalse\else\res@header@social@sep\fi
-    \ifstrempty{#1}{\href{#2}{#3}}{\href{#1}{#3}}%
+  \ifblank{#3}{}{%
+    \if@res@social@first\@res@social@firstfalse\else\res@header@social@sep\fi%
+    \ifstrempty{#1}{#3}{\href{#1}{#3}}%
   }%
 }
-
 % Photo dimensions (calculated once)
 \newlength{\res@photo@diameter}
 \newlength{\res@header@text@width}
