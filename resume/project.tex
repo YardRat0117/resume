@@ -9,11 +9,26 @@
     {2025.9 - 2026.1}
     {
         \begin{cvitems}
-            \item 针对开发工具依赖复杂问题，调研 Dev Container 等方案，设计容器化隔离运行框架
-            \item 拆分 CLI 层、应用层和运行时层，抽象接口封装底层运行时，降低代码耦合度
-            \item 使用 Moby SDK 实现 Docker 运行时支持，管理容器生命周期和资源清理流程
-            \item 完善执行控制流程，实现声明式工具注册、退出码语义透传和版本管理等功能
-            \item 最终支持多工具、多版本、用户层无感知隔离运行，并具备扩展多运行时架构基础
+            \item {针对依赖复杂问题，参考 Dev Container 等方案，设计容器化隔离运行方案}
+            \item {设计分层架构，通过接口封装底层运行时，降低系统耦合；并基于 Moby SDK 实现 Docker 支持}
+            \item {完善产品功能，实现声明式工具注册、退出码透传和版本管理，合理重构提升系统可维护性}
+            \item {最终支持多工具、多版本隔离运行，实现用户侧无感知运行，并具备扩展多运行时架构基础}
+        \end{cvitems}
+    }
+
+\vspace{0.5em}
+
+\cventry
+    {https://github.com/YardRat0117/db-lab5-go}
+    {Go + React Web 应用重构}
+    {课程项目}
+    {2025.3}
+    {
+        \begin{cvitems}
+            \item {将原有 Java + Vue 课程项目重构为 Go + Gin 与 React 的前后端分离架构}
+            \item {重新设计后端数据模型与实体结构，实现基于 MySQL 的数据访问与业务逻辑}
+            \item {重构前端框架，将 Vue 应用迁移至 React，实现与后端 REST API 的交互}
+            \item {使用 Docker 在本地开发环境中模拟部署，并进行前后端联调优化用户体验}
         \end{cvitems}
     }
 
