@@ -157,7 +157,7 @@
   \ifdefined\@res@photo
     % Set photo diameter based on shape
     \ifdefstring{\@res@photo@shape}{circle}%
-      {\setlength{\res@photo@diameter}{1.3cm}}%
+      {\setlength{\res@photo@diameter}{1.1cm}}%
       {\setlength{\res@photo@diameter}{1.8cm}}%
     % Set border color
     \ifdefstring{\@res@photo@edge}{edge}%

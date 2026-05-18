@@ -3,15 +3,30 @@
 \begin{cventries}
 
 \cventry
-    {参与 GPU 推理平台与部署体系工程化建设}
-    {北京空间漫步科技有限公司 - 工程 Infra 实习生}
+    {机器学习平台核心功能与集群基础设施建设}
+    {北京卓识私募基金管理有限公司 - 机器学习平台工程师实习生}
+    {上海市}
+    {2026.4 - 至今}
+    {
+        \begin{cvitems}
+            \item {开发主机遥测 Agent，采集 PCIe / CPU / 磁盘信息并接入监控与调度服务，使用 Ansible 实现自动化部署}
+            \item {实现 K8s 节点 Taints 管理、相应前端重构及 Python SDK，供量化业务方对接平台能力}
+            \item {重构 Fabric 任务调度状态机，解决并发竞态问题，重新设计状态模型并引入统一处理}
+            \item {调研 Cilium 作为新集群 CNI 方案，搭建 PoC 并评估 Tetragon 替代现有 Agent 的 eBPF 遥测模块}
+        \end{cvitems}
+    }
+
+\vspace{0.3em}
+
+\cventry
+    {GPU 训练编排与算力供应商对接}
+    {空间漫步科技（深圳）有限公司 - 工程 Infra 实习生}
     {远程实习}
     {2025.10 - 2025.12}
     {
         \begin{cvitems}
-            \item {识别 GPU 推理管线中状态与计算耦合问题，设计计算服务无状态化重构方案，并提交技术评审}
-            \item {参与选型并落地 Kubernetes + Argo 工作流，完成部署和访问配置，交付可视化任务提交入口}
-            \item {对接外部算力供应商 API，完成接口适配与前后端开发、联调工作(Go + Vue3 + gRPC)}
+            \item {选型 Argo Workflow，Helm 部署并配置 GPU 调度，前端接入 Argo UI 交付训练入口}
+            \item {对接共绩云 Serverless GPU，基于 Go / Vue3 / gRPC 完成训练提交到后端调度的全流程开发}
         \end{cvitems}
     }
 
