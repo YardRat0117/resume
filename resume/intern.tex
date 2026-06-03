@@ -9,10 +9,13 @@
     {2026.4 - 至今}
     {
         \begin{cvitems}
+            \item {调研 Cilium 作为新集群 CNI 方案，搭建 PoC 并评估 Tetragon 替代现有 Agent 的 eBPF 遥测模块}
+            \item {调研 Kueue 高级特性，包括 Topology Aware Scheduling、Dynamic Resource Allocation、MultiKueue 及 Nested Cohort}
             \item {开发主机遥测 Agent，采集 PCIe / CPU / 磁盘信息并接入监控与调度服务，使用 Ansible 实现自动化部署}
             \item {实现 K8s 节点 Taints 管理、相应前端重构及 Python SDK，供量化业务方对接平台能力}
-            \item {重构 Fabric 任务调度状态机，解决并发竞态问题，重新设计状态模型并引入统一处理}
-            \item {调研 Cilium 作为新集群 CNI 方案，搭建 PoC 并评估 Tetragon 替代现有 Agent 的 eBPF 遥测模块}
+            \item {重构任务调度引擎，包括排查并发竞态问题，重新设计状态机模型；支持多集群迁移，兼容 CPU / GPU 双集群提交}
+            \item {参与 OpenEBS 存储方案调研开发，实现CLI参数解析、PVC 自动生成及 OwnerRef GC开发}
+            \item {对接 JuiceFS 用户身份同步，从外部 IPA 同步 uid/gid 至组内元信息服务，并通过遥测 Agent 定期同步至集群主机}
         \end{cvitems}
     }
 
