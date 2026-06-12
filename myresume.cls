@@ -63,11 +63,10 @@
 %-------------------------------------------------------------------------------
 \newfontfamily\cvfont[
   Path = fonts/,
-  UprightFont = MapleMonoNL-NFMono-CN-Regular.ttf,
-  BoldFont    = MapleMonoNL-NFMono-CN-Regular.ttf,
-  ItalicFont  = MapleMonoNL-NFMono-CN-Regular.ttf,
-  BoldItalicFont = MapleMonoNL-NFMono-CN-Regular.ttf,
-  FakeBold    = 2.5,
+  UprightFont    = MapleMonoNL-NF-CN-Regular.ttf,
+  BoldFont       = MapleMonoNL-NF-CN-Bold.ttf,
+  ItalicFont     = MapleMonoNL-NF-CN-Italic.ttf,
+  BoldItalicFont = MapleMonoNL-NF-CN-BoldItalic.ttf,
 ]{}
 
 %-------------------------------------------------------------------------------
