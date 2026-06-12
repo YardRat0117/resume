@@ -9,13 +9,14 @@
     {2026.4 - 至今}
     {
         \begin{cvitems}
-            \item {调研 Cilium 作为新集群 CNI 方案，搭建 PoC 并评估 Tetragon 替代现有 Agent 的 eBPF 遥测模块}
-            \item {调研 Kueue 高级特性，包括 Topology Aware Scheduling、Dynamic Resource Allocation、MultiKueue 及 Nested Cohort}
-            \item {开发主机遥测 Agent，采集 PCIe / CPU / 磁盘信息并接入监控与调度服务，使用 Ansible 实现自动化部署}
-            \item {实现 K8s 节点 Taints 管理、相应前端重构及 Python SDK，供量化业务方对接平台能力}
-            \item {重构任务调度引擎，包括排查并发竞态问题，重新设计状态机模型；支持多集群迁移，兼容 CPU / GPU 双集群提交}
-            \item {参与 OpenEBS 存储方案调研开发，实现CLI参数解析、PVC 自动生成及 OwnerRef GC开发}
-            \item {对接 JuiceFS 用户身份同步，从外部 IPA 同步 uid/gid 至组内元信息服务，并通过遥测 Agent 定期同步至集群主机}
+            \item {评估 Cilium 作为新集群 CNI，搭建 PoC 验证，调研 Tetragon 可观测性}
+            \item {重构任务调度引擎：排查并发竞态，重新设计状态机及数据库模型，完善边界功能}
+            \item {参与新建集群迁移，开发跨集群任务调度功能及多集群基础设施适配}
+            \item {开发平台基础设施，包括主机信息采集、K8s 管理接口及前端 UI 等}
+            \item {参与存储方案评估与开发，包括 OpenEBS 本地存储和 JuiceFS 共享存储，以及后续接入开发}
+            \item {分析并修复 Python 打包 ABI 兼容问题，开发平台 Python SDK}
+            \item {调研 Kueue 高级特性（TAS、DRA、MultiKueue）并评估现有架构适配性与演进方向 (WIP)}
+            \item {对接 JuiceFS 官方，验证 PoC 在实际平台场景落地，关注多租户隔离、性能等关键因素 (WIP)}
         \end{cvitems}
     }
 
@@ -28,8 +29,8 @@
     {2025.10 - 2025.12}
     {
         \begin{cvitems}
-            \item {选型 Argo Workflow，Helm 部署并配置 GPU 调度，前端接入 Argo UI 交付训练入口}
-            \item {对接共绩云 Serverless GPU，基于 Go / Vue3 / gRPC 完成训练提交到后端调度的全流程开发}
+            \item {选型 Argo Workflows 编排 GPU 训练，Helm 部署并集成 Argo UI}
+            \item {对接共绩云 Serverless GPU，基于 Go + Vue3 + gRPC 完成训练任务全流程开发}
         \end{cvitems}
     }
 
